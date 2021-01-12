@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <button type="button" class="btn btn-primary" onclick="callAPI()">Call API</button>
+</div>
+
+@section scripts {
+    <script>
+        function callAPI() {
+            console.log("calling API...");
+
+            $.ajax({
+                url: `https://api_container/weatherforecast/get`,
+                method: 'GET',
+                success: function (data) {
+                    console.log(data);
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+        }
+    </script>
+}
