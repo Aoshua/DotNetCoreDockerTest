@@ -17,10 +17,10 @@
                 url: `https://api_container/weatherforecast/get`,
                 method: 'GET',
                 success: function (data) {
-                    console.log(data);
+                    console.log("success:", data);
                 },
                 error: function (error) {
-                    console.log(error);
+                    console.log("error:", error);
                 }
             });
         }
