@@ -14,7 +14,7 @@
             console.log("calling API...");
 
             $.ajax({
-                url: `https://api_container/weatherforecast/get`,
+                url: `https://localhost:49165/weatherforecast/get`,
                 method: 'GET',
                 success: function (data) {
                     console.log("success:", data);

@@ -26,6 +26,17 @@ namespace API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            // Add to enable CORS
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                                  builder =>
+                                  {
+                                      builder.WithOrigins("http://localhost:49164");
+                                  });
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +50,8 @@ namespace API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(); // Add to enable CORS
 
             app.UseAuthorization();
 

@@ -1,5 +1,9 @@
 ### Read Me
 
+#### References:
+* [Networking with standalone containers](https://docs.docker.com/network/network-tutorial-standalone/)
+* [Change Cors Policy](https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-5.0)
+
 In case it is helpful, below is a `docker inspect` of my ui_container
 
 ```

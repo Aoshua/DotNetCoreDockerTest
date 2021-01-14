@@ -21,7 +21,7 @@ namespace API
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    //.UseUrls(new[] { "https://localhost:49167/" });
+                    //    .UseUrls(new[] { "https://localhost:49167/" });
                 });
     }
 }
