@@ -33,7 +33,7 @@ namespace API
                 options.AddDefaultPolicy(
                                   builder =>
                                   {
-                                      builder.WithOrigins("http://localhost:49164");
+                                      builder.WithOrigins("https://localhost:49161");
                                   });
             });
 
